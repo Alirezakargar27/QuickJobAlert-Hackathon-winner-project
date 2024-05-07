@@ -7,7 +7,7 @@ def send_sms_with_requests(phone_number, message):
     
     #authorization key
     headers = {
-        'Authorization': 'App ba0f53e2c0de6421ad8433544c855b72-acb9e624-7378-4d67-bda6-d560b9403cb8', 
+        'Authorization': 'App ba0f53e2c0de6421ad8433544c855b72-acb9e624-7378-4d67-bda6-d560b9403cb8',
         'Content-Type': 'application/json',
         'Accept': 'application/json'
     }
@@ -35,4 +35,3 @@ def send_sms_with_requests(phone_number, message):
     else:
         print(f"Error: Failed to send SMS. Status Code: {response.status_code}, Details: {response_data}")
 #uncomment when not needed
-send_sms_with_requests("+1234", "Hallo test")
