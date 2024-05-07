@@ -2,24 +2,6 @@ import json
 import os
 
 def get_user_input():
-     # Ask the user for personal information and job preferences
-    print("Enter your personal information and job search preferences:")
-    first_name = input("First Name: ")
-    last_name = input("Last Name: ")
-    phone_number = input("Phone Number: ")
-    job_title = input("Desired Job Title: ")
-    location = input("Preferred Location: ")
-
-     # Create a dictionary and saves the data
-    user_data = {
-        'first_name': first_name,
-        'last_name': last_name,
-        'phone_number': phone_number,
-        'job_title': job_title,
-        'location': location
-    }
-
-    # Load existing data if the file exists and is a valid JSON file
     if os.path.exists('user_data.json'):
         with open('user_data.json', 'r') as file:
             try:
@@ -31,16 +13,61 @@ def get_user_input():
     else:
         all_users_data = []
 
-    # Append the new user data
-    all_users_data.append(user_data)
+    while True:
+        print("\nOptions:")
+        print("1. Add user")
+        print("2. Delete user")
+        print("3. Exit")
 
-    # Save the updated 
-    with open('user_data.json', 'w') as file:
-        json.dump(all_users_data, file, indent=4)
+        option = input("Choose an option: ")
 
-    return user_data
+        if option == "1":
+            # Add user
+            print("Enter user details:")
+            first_name = input("First Name: ")
+            last_name = input("Last Name: ")
+            phone_number = input("Phone Number: ")
+            job_title = input("Desired Job Title: ")
+            location = input("Preferred Location: ")
+            user_id = len(all_users_data) + 1
 
-# Example usage
+            user_data = {
+                'user_id': user_id,
+                'first_name': first_name,
+                'last_name': last_name,
+                'phone_number': phone_number,
+                'job_title': job_title,
+                'location': location
+            }
+
+            all_users_data.append(user_data)
+
+            with open('user_data.json', 'w') as file:
+                json.dump(all_users_data, file, indent=4)
+
+            print("User added successfully!")
+            print(f"Your user ID is: {user_id}")
+
+        elif option == "2":
+            print("Enter user ID to delete:")
+            user_id = input("User ID: ")
+
+            all_users_data = [user for user in all_users_data if user.get('user_id') != int(user_id)]
+
+            with open('user_data.json', 'w') as file:
+                json.dump(all_users_data, file, indent=4)
+
+            print("User deleted successfully!")
+
+        elif option == "3":
+            print("Exiting...")
+            break
+
+        else:
+            print("Invalid option. Please choose again.")
+
+    return all_users_data
+
 new_user_data = get_user_input()
-print("\nNew user data added:")
+print("\nUpdated user data:")
 print(new_user_data)
