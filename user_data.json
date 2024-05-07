@@ -1,104 +1,18 @@
 [
     {
-        "first_name": "kim",
-        "last_name": "ord",
-        "phone_number": "01632173824",
-        "job_title": "software developer",
-        "location": "berlin"
+        "user_id": 1,
+        "first_name": "Alireza",
+        "last_name": "Kargar",
+        "phone_number": "+4915735352391",
+        "job_title": "Software developer",
+        "location": "Germany"
     },
     {
-        "first_name": "tim",
-        "last_name": "aspirin ",
-        "phone_number": "01323938303",
-        "job_title": "software developer",
-        "location": "hannover"
-    },
-    {
-        "first_name": "ali ",
-        "last_name": "reza",
-        "phone_number": "13234939",
-        "job_title": "software developer",
-        "location": "hamburg"
-    },
-    {
-        "first_name": "dumbo ",
-        "last_name": "bond",
-        "phone_number": "128828280",
-        "job_title": "software developer",
-        "location": "barbiland"
-    },
-    {
-        "1": {
-            "first_name": "adjd",
-            "last_name": "ajfdjd",
-            "phone_number": "1233",
-            "job_title": "jncdnnd",
-            "location": "jfjhdjn"
-        },
-        "2": {
-            "first_name": "adjd",
-            "last_name": "ajfdjd",
-            "phone_number": "1233",
-            "job_title": "jncdnnd",
-            "location": "jfjhdjn"
-        },
-        "3": {
-            "first_name": "adjd",
-            "last_name": "ajfdjd",
-            "phone_number": "1233",
-            "job_title": "jncdnnd",
-            "location": "jfjhdjn"
-        },
-        "4": {
-            "first_name": "adjd",
-            "last_name": "ajfdjd",
-            "phone_number": "1233",
-            "job_title": "jncdnnd",
-            "location": "jfjhdjn"
-        }
-    },
-    {
-        "2": {
-            "first_name": "njdjsdmd",
-            "last_name": "sjdnfssidj",
-            "phone_number": "123445",
-            "job_title": "jdndsospos",
-            "location": "berlin"
-        }
-    },
-    {
-        "2": {
-            "first_name": "kim",
-            "last_name": "apple",
-            "phone_number": "183329339",
-            "job_title": "software dev",
-            "location": "berlin"
-        }
-    },
-    {
-        "1": {
-            "first_name": "kim",
-            "last_name": "banana",
-            "phone_number": "1233445",
-            "job_title": "bimbo ",
-            "location": "barbiland"
-        }
-    },
-    {
-        "2": {
-            "first_name": "gillet ",
-            "last_name": "rassieren",
-            "phone_number": "122334",
-            "job_title": "rassieren ",
-            "location": "haare"
-        }
-    },
-    {
-        "user_id": 10,
-        "first_name": "kim ",
-        "last_name": "plum",
-        "phone_number": "123455",
-        "job_title": "software dev",
-        "location": "hajd"
+        "user_id": 2,
+        "first_name": "Charles",
+        "last_name": "Eiffiong",
+        "phone_number": "435345643",
+        "job_title": "Engineer",
+        "location": "Germany"
     }
 ]

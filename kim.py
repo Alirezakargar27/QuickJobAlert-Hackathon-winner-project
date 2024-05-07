@@ -32,12 +32,12 @@ def get_user_input():
             user_id = len(all_users_data) + 1
 
             user_data = {
-                'user_id': user_id,
-                'first_name': first_name,
-                'last_name': last_name,
-                'phone_number': phone_number,
-                'job_title': job_title,
-                'location': location
+                "user_id": user_id,
+                "first_name": first_name,
+                "last_name": last_name,
+                "phone_number": phone_number,
+                "job_title": job_title,
+                "location": location
             }
 
             all_users_data.append(user_data)
