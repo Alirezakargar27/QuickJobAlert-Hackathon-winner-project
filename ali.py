@@ -8,31 +8,23 @@ def fetch_job_listings(api_key, filters):
 
     host = 'jooble.org'
 
-    # Construct JSON query with keywords, location, and other filters
     body = json.dumps({
         "keywords": filters.get("keywords", ""),
         "location": filters.get("location", ""),
     })
 
     try:
-        # Establish connection to Jooble API
         connection = http.client.HTTPConnection(host)
 
-        # Request headers
         headers = {"Content-type": "application/json"}
 
-        # Send POST request with API key
         connection.request('POST', '/api/' + api_key, body, headers)
 
-        # Get response from the API
         response = connection.getresponse()
 
-        # Check response status
         if response.status == 200:
-            # Read and parse the response JSON
             response_data = json.loads(response.read().decode("utf-8"))
 
-            # Filter job listings updated from May 1, 2024, onwards
             filtered_listings = []
             for job in response_data.get("jobs", []):
                 job_updated = datetime.strptime(job.get("updated").split('T')[0], "%Y-%m-%d")
@@ -58,11 +50,10 @@ def fetch_job_listings(api_key, filters):
         connection.close()
 
 
-# Example usage:
 api_key = "471cdc11-45b6-419c-8c52-2c1a99f3d072"
 
 filters = {
-    "keywords": "Software",
+    "keywords": ,
     "location": "Hamburg",
 }
 
