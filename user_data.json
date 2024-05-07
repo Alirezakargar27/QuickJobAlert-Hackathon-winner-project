@@ -1,0 +1,23 @@
+[
+  {
+    "first_name": "kim",
+    "last_name": "ord",
+    "phone_number": "01632173824",
+    "job_title": "software developer",
+    "location": "berlin"
+  },
+  {
+    "first_name": "tim",
+    "last_name": "aspirin ",
+    "phone_number": "01323938303",
+    "job_title": "software developer",
+    "location": "hannover"
+  },
+  {
+    "first_name": "ali ",
+    "last_name": "reza",
+    "phone_number": "13234939",
+    "job_title": "software developer",
+    "location": "hamburg"
+  }
+]
