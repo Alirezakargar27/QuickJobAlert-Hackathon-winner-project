@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 import time
 from Job_API import fetch_job_listing
 from SMS_API import send_sms_with_requests
-import website
+import generate_html
 
 def main():
 
@@ -38,7 +38,9 @@ def main():
                     send_sms_with_requests(phone_number, message)
                 else:
                     print("Job already exists in user's database. Skipping SMS notification.")
-
+                    
+            generate_html.generate_website()
+        
         # Wait for 24 hours before checking again
         print("Waiting for next check in 24 hours...")
         time.sleep(86400)

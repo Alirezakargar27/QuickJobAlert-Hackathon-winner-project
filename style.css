@@ -1,3 +1,49 @@
 body {
-    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: lightgreen;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.container {
+    width: 1024px;
+    margin: 40px auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+}
+
+.card {
+    width: 286px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-body>p>a {
+    background-color: gainsboro;
+    padding: 5px 10px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
 }

@@ -1,7 +1,8 @@
 import json
 import os
 from colorama import Fore, Style
-from main import main  # Importing main function from main.py
+from main import main
+
 
 
 def get_user_input():
