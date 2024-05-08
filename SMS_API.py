@@ -16,7 +16,3 @@ def send_sms_with_sinch(phone_number, message):
     )
 
     print(send_batch_response)
-
-phone_number = "+4915735352391"
-message = ("Hello")
-send_sms_with_sinch(phone_number, message)
