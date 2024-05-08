@@ -1,18 +1,41 @@
-# this is the plan B API for sending SMS considering the limitation with initial API it shall not be used in the main file yet
-from sinch import SinchClient
+import requests
+import json
 
-def send_sms_with_sinch(phone_number, message):
-    sinch_client = SinchClient(
-        key_id="fe6cc05f-d883-4955-b926-65c203dde5ef",
-        key_secret="5ovoJMtVl6k_aafZ4-uIZnjJgx",
-        project_id="24882eee-2025-4616-a45e-2cf9a4313d6e"
-    )
 
-    send_batch_response = sinch_client.sms.batches.send(
-        body=message,
-        to=[phone_number],
-        from_="+447520650936",
-        delivery_report="none"
-    )
+def send_sms_with_requests(phone_number, message):
+    try:
+        # API endpoint
+        url = "https://xlzm4g.api.infobip.com/sms/2/text/advanced"
 
-    print(send_batch_response)
+        # Headers for authorization and content type
+        headers = {
+            'Authorization': 'App ba0f53e2c0de6421ad8433544c855b72-acb9e624-7378-4d67-bda6-d560b9403cb8',
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        }
+
+        # Payload with the SMS message and destination
+        payload = {
+            "messages": [
+                {
+                    "destinations": [{"to": phone_number}],
+                    "from": "QuickJobAlerts",
+                    "text": message
+                }
+            ]
+        }
+
+        # Send POST request to the API endpoint
+        response = requests.post(url, json=payload, headers=headers)
+
+        # Check if the request was successful
+        if response.status_code == 200:
+            print("SMS sent successfully!")
+        else:
+            print(f"Failed to send SMS. Status Code: {response.status_code}, Details: {response.text}")
+    except Exception as e:
+        print(f"An error occurred while sending the SMS: {e}")
+
+
+# Test the function
+send_sms_with_requests("+1234567890", "Hello, this is a test message from QuickJobAlerts!")

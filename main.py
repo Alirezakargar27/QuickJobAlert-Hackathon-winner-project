@@ -2,7 +2,7 @@ import json
 from datetime import datetime, timedelta
 import time
 from Job_API import fetch_job_listing
-from SMS_API import send_sms_with_sinch
+from SMS_API import send_sms_with_requests
 
 def main():
 
@@ -34,7 +34,7 @@ def main():
                 if "jobs" not in user_data or not any(job.get("id") == job_id for job in user_data["jobs"]):
                     # Send SMS
                     message = f"Hi {user_name}, we found a new job for you! {job_link} - QuickJobAlerts"
-                    send_sms_with_sinch(phone_number, message)
+                    send_sms_with_requests(phone_number, message)
                 else:
                     print("Job already exists in user's database. Skipping SMS notification.")
 
