@@ -1,7 +1,9 @@
 import json
 import os
+import webbrowser
 from colorama import Fore, Style
 from main import main
+from generate_html import generate_website
 
 
 
@@ -26,8 +28,7 @@ def get_user_input():
         print("1. Make Profile")
         print("2. Delete Profile")
         print("3. Activate SMS function")
-        print("4. Generate Website")
-        print("5. Exit")
+        print("4. Exit")
 
         option = input(f"{Fore.GREEN}Choose an option: {Style.RESET_ALL}")
 
@@ -71,10 +72,7 @@ def get_user_input():
             main()
 
         elif option == "4":
-            generate_website()
-
-        elif option == "5":
-            print("by by !")
+            print("bye bye!")
             break
 
         else:

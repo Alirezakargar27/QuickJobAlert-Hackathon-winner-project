@@ -38,7 +38,6 @@ def generate_website():
                         </ul> \
                     </div>"
 
-    print("Generated HTML for users:", html_str)  # Debug statement to show generated HTML
 
     # Read HTML template
     with open("index.html", "r") as file:
