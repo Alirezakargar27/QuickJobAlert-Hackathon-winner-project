@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background-color: green;
+    background-color: lightgreen;
     color: white;
     display: flex;
     align-items: center;
