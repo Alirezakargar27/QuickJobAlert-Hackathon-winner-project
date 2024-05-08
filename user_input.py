@@ -1,10 +1,7 @@
 import json
 import os
-import webbrowser
 from colorama import Fore, Style
-from main import main
-from generate_html import generate_website
-
+import send_sms
 
 
 def get_user_input():
@@ -19,6 +16,16 @@ def get_user_input():
     else:
         all_users_data = []
 
+    return all_users_data
+
+def read_user_data(path="user_data.json"):
+    with open(path, "r") as fObj:
+        data = json.load(fObj)
+    return data
+
+
+def show_menue():
+    """show menue"""
     while True:
         print(f"\n{Fore.CYAN}Welcome to QuickJobAlerts{Style.RESET_ALL}")
         print(f"{Fore.RED}We save your time!{Style.RESET_ALL}")
@@ -27,10 +34,11 @@ def get_user_input():
         print(f"\n{Fore.GREEN}Options:{Style.RESET_ALL}")
         print("1. Make Profile")
         print("2. Delete Profile")
-        print("3. Activate SMS function")
-        print("4. Exit")
+        print("3. Exit")
 
         option = input(f"{Fore.GREEN}Choose an option: {Style.RESET_ALL}")
+
+        all_users_data = read_user_data()
 
         if option == "1":
             print(f"\n{Fore.GREEN}Please enter your personal data:{Style.RESET_ALL}")
@@ -58,6 +66,8 @@ def get_user_input():
             print(f"\n{Fore.GREEN}User added successfully!{Style.RESET_ALL}")
             print(f"{Fore.GREEN}Your user ID is: {user_id}{Style.RESET_ALL}")
 
+            send_sms.send_sms_to_user(False)
+
         elif option == "2":
             user_id = input("Please enter your user ID: ")
 
@@ -69,9 +79,6 @@ def get_user_input():
             print(f"\n{Fore.GREEN}Your profile deleted! We wish you success in your Career{Style.RESET_ALL}")
 
         elif option == "3":
-            main()
-
-        elif option == "4":
             print("bye bye!")
             break
 
@@ -81,7 +88,7 @@ def get_user_input():
     return all_users_data
 
 
-if __name__ == "__main__":
-    new_user_data = get_user_input()
-    print("\nUpdated user data:")
-    print(new_user_data)
+#if __name__ == "__main__":
+   # new_user_data = get_user_input()
+    #print("\nUpdated user data:")
+   # print(new_user_data)

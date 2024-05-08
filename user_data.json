@@ -1,1 +1,64 @@
-[]
+[
+    {
+        "user_id": 1,
+        "first_name": "Charles",
+        "last_name": "435",
+        "phone_number": "def read_user_data(path=\"users.json\"):",
+        "job_title": "    with open(path, \"r\") as fObj:",
+        "location": "        data = json.load(fObj)"
+    },
+    {
+        "user_id": 2,
+        "first_name": "Chalres",
+        "last_name": "dfsdf",
+        "phone_number": "+4367763173243",
+        "job_title": "Engineer",
+        "location": "Germany",
+        "jobs": [
+            {
+                "id": 5417545683352567111,
+                "title": "Global Project Engineer - Electroplating Decorative (f/m/d)",
+                "location": "Germany",
+                "company": "SurTec International GmbH",
+                "updated": "2024-05-04T00:00:00.0000000",
+                "link": "https://jooble.org/jdp/5417545683352567111"
+            }
+        ]
+    },
+    {
+        "user_id": 3,
+        "first_name": "Maria",
+        "last_name": "Maria",
+        "phone_number": "+4915735352391",
+        "job_title": "Engineer",
+        "location": "Germany",
+        "jobs": [
+            {
+                "id": 5417545683352567111,
+                "title": "Global Project Engineer - Electroplating Decorative (f/m/d)",
+                "location": "Germany",
+                "company": "SurTec International GmbH",
+                "updated": "2024-05-04T00:00:00.0000000",
+                "link": "https://jooble.org/jdp/5417545683352567111"
+            }
+        ]
+    },
+    {
+        "user_id": 4,
+        "first_name": "Kim",
+        "last_name": "kim",
+        "phone_number": "+493424424234",
+        "job_title": "Software",
+        "location": "Germany",
+        "jobs": [
+            {
+                "id": 8410532357667065931,
+                "title": "Technical Lead Embedded Software",
+                "location": "Germany",
+                "company": "EvolveTalent",
+                "updated": "2024-05-02T07:44:48.6092681+00:00",
+                "link": "https://jooble.org/jdp/8410532357667065931"
+            }
+        ]
+    }
+]

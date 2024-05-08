@@ -1,90 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuickJobAlerts</title>
+    <title>Users job dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Users job dashboard</title>
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <style>
-            body {
-                font-family: Arial, Helvetica, sans-serif;
-            }
-
-            header {
-                background-color: rgb(228, 255, 228);
-                color: white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 200px;
-            }
-
-            .container {
-                width: 1024px;
-                margin: 40px auto;
-            }
-
-            ul {
-                list-style-type: none;
-                padding: 0;
-                display: flex;
-                gap: 40px;
-            }
-
-            .card {
-                width: 286px;
-                border: 1px solid gainsboro;
-                border-radius: 10px;
-            }
-
-            .card-image {
-                width: 100%;
-                border-radius: 10px;
-            }
-
-            .card-body {
-                padding: 10px;
-            }
-
-            .card-body>p>a {
-                background-color: gainsboro;
-                padding: 5px 10px;
-                color: black;
-                text-decoration: none;
-                border-radius: 5px;
-                display: inline-block;
-                margin-top: 20px;
-            }
-        </style>
-
-    </head>
-
-    <body>
-        <header>
-            <h1>Welcome to Quick Job User Dashboard</h1>
-        </header>
-
-        <div class="container">
-            <div>                         <h1>Alireza Kargar</h1>                         <ul>                             <li>                         <div class="card">                             <img class="card-image" src='https://cdn.pixabay.com/photo/2017/10/17/10/05/job-2860035_1280.jpg' />                             <div class="card-body">                                 <h3>Software Developer Production Engineering</h3>                                 <p>                                     <i class="fa fa-building"></i> EvolveTalent <br>                                     <i class="fa fa-location-arrow"></i> Germany <br>                                    <a target="_blank" href="https://jooble.org/jdp/-826644048264953532"> Details </a>                                 </p>                             </div>                         </div>                     </li>                         </ul>                     </div>
+    <nav>
+        <div class="brand">QuickJobAlerts</div>
+        <ul>
+            <li><a href="#jobs">Jobs</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About Us</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Welcome to Quick Job User Dashboard</h1>
+    </header>
+    <div class="container">
+        <div>
+            <h1>Alireza Kargar</h1>
+            <ul>
+                <li>
+                    <div class="card">
+                        <img class="card-image" src="https://cdn.pixabay.com/photo/2017/10/17/10/05/job-2860035_1280.jpg" alt="Job Image">
+                        <div class="card-body">
+                            <h3>Software Developer Production Engineering</h3>
+                            <p><i class="fa fa-building"></i> EvolveTalent <br>
+                               <i class="fa fa-location-arrow"></i> Germany <br>
+                               <a href="https://jooble.org/jdp/-826644048264953532" target="_blank">Details</a>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-
-    </body>
-
-    </html>
+    </div>
+    <footer>
+        &copy; 2024 QuickJobAlerts | All Rights Reserved
+    </footer>
 </body>
-
 </html>
