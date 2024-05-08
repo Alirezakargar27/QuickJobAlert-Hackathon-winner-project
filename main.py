@@ -1,9 +1,4 @@
-import json
-from datetime import datetime, timedelta
-import time
-from Job_API import fetch_job_listing
-from SMS_API import send_sms_with_requests
-import generate_html
+
 import user_input
 import threading
 import send_sms

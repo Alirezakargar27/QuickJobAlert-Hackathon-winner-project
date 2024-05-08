@@ -36,9 +36,9 @@ def show_menue():
         print("2. Delete Profile")
         print("3. Exit")
 
-        option = input(f"{Fore.GREEN}Choose an option: {Style.RESET_ALL}")
-
+        print(f"{Fore.GREEN} Real time SMS Status of Users: {Style.RESET_ALL}")
         all_users_data = read_user_data()
+        option = input(f"{Fore.GREEN}Choose an option: {Style.RESET_ALL}")
 
         if option == "1":
             print(f"\n{Fore.GREEN}Please enter your personal data:{Style.RESET_ALL}")
