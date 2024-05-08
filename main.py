@@ -4,7 +4,7 @@ import threading
 import send_sms
 
 def main():
-
+    """calling sendsmsuser function"""
     api_key = "471cdc11-45b6-419c-8c52-2c1a99f3d072"
 
     while True:

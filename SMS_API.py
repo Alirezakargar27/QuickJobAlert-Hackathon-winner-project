@@ -3,6 +3,7 @@ import json
 
 
 def send_sms_with_requests(phone_number, message):
+    """Implementing SMS API """
     try:
         # API endpoint
         url = "https://xlzm4g.api.infobip.com/sms/2/text/advanced"

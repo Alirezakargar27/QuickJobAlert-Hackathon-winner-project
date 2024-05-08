@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "user_id": 2,
+        "first_name": "Kim",
+        "last_name": "Ordonez",
+        "phone_number": "+491632173824",
+        "job_title": "Engineer",
+        "location": "England",
+        "jobs": [
+            {
+                "id": -7518097974991584344,
+                "title": "Vice President of Engineering",
+                "location": "United Kingdom",
+                "company": "Confidential",
+                "updated": "2024-05-07T00:00:00.0000000",
+                "link": "https://jooble.org/jdp/-7518097974991584344"
+            }
+        ]
+    }
+]

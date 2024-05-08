@@ -5,6 +5,8 @@ import send_sms
 
 
 def get_user_input():
+    """get user from Database"""
+
     if os.path.exists('user_data.json'):
         with open('user_data.json', 'r') as file:
             try:

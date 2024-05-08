@@ -6,7 +6,7 @@ from SMS_API import send_sms_with_requests
 import generate_html
 import user_input
 def send_sms_to_user(do_sleep):
-
+    """send Smms to user in the database and make sure not send sms for old jobs"""
     api_key = "471cdc11-45b6-419c-8c52-2c1a99f3d072"
 
     #get all user data
