@@ -12,3 +12,5 @@ Technologies Used:
 Python
 APIs
 HTML & CSS
+
+Developers:@KimCodeBase and @alirezakargar27
