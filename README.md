@@ -1,4 +1,4 @@
-QuickJob Alert
+QuickJob Alert ( winner of the First Prize for Code quality)
 QuickJob Alert is  the result of a 3 day Hackathon in Master school, organized in May 2024. The project aimed at helping users stay informed about job opportunities matching their preferences. Whether you're actively job hunting or just want to keep an eye on the market, QuickJob Alert has you covered.
 
 Features:
