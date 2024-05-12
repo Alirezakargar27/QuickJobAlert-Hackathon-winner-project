@@ -1,5 +1,3 @@
-import json
-from datetime import datetime, timedelta
 import time
 from Job_API import fetch_job_listing
 from SMS_API import send_sms_with_requests
